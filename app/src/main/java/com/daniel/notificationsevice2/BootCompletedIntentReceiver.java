@@ -12,10 +12,10 @@ public class BootCompletedIntentReceiver extends BroadcastReceiver
 {
     @Override
     public void onReceive(Context context, Intent intent) {
-        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction())) {
+        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction()))
+        {
             Intent pushIntent = new Intent(context, NotificationListener.class);
             context.startService(pushIntent);
-            //Test again I don't want shit auto popping up.
 
         }
     }
