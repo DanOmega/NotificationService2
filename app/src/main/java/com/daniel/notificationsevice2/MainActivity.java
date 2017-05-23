@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    //Restart the service with the Start Service button
     public void startMyService(View view)
     {
         if( myService == null )
